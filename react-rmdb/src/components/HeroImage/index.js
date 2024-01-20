@@ -2,12 +2,12 @@ import React from "react";
 
 import { Wrapper, Content, Text } from "./HeroImage.style";
 
-const HeroImage = (prop) => (
-    <Wrapper image={prop.image}>
+const HeroImage = ({image, title, text}) => (
+    <Wrapper image={image}>
         <Content>
             <Text>
-                <h1>{prop.title}</h1>
-                <p>{prop.text}</p>
+                <h1>{title}</h1>
+                <p>{text}</p>
             </Text>
         </Content>
     </Wrapper>
